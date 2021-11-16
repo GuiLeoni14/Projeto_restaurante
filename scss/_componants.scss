@@ -61,4 +61,12 @@
             color: #fff;
         }
     }
+    a{
+        &.active{
+            .img{
+                background-color: $yellow;
+                transform: scale(1.1);
+            }
+        }
+    }
 }

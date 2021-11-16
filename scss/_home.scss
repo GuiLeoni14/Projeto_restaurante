@@ -166,9 +166,8 @@
             margin-top: 9rem;
             width: 100%;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: space-between;
-            background-color: #fff;
             .cardapio-almoco{
                 padding: 3rem;
                 width: 100%;
@@ -187,20 +186,36 @@
                     }
                 }
                 ul{
+                    display: none;
+                    animation: fadeIn forwards .5s;
+                    span{
+                        color: $red-escuro;
+                        align-self: center;
+                        font-weight: 800;
+                        font-size: 1.6rem;
+                        line-height: 1.9rem;
+                    }
                     li{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         position: relative;
+                        &:not(:first-child){
+                            margin-top: 3rem;
+                        }
                         h6{
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 1.6rem;
                             line-height: 1.9rem;
                         }
                         .linha::after{
+                            // top: 50%;
+                            // transform:translate(-50%, -50%);
+                            // bottom: 0;
+                            // width: 100%;
+                            // max-width: 37rem;
                             top: 50%;
-                            transform:translate(-50%, -50%);
-                            bottom: 0;
+                            right: 6rem;
                             width: 100%;
                             max-width: 37rem;
                         }
@@ -209,6 +224,10 @@
                             font-size: 1.6rem;
                             line-height: 1.9rem;
                         }
+                    }
+                    &.active{
+                        display: flex;
+                        flex-direction: column;
                     }
                 }
             }
@@ -230,13 +249,25 @@
                     }
                 }
                 ul{
+                    display: none;
+                    animation: fadeIn forwards .5s;
+                    span{
+                        align-self: center;
+                        font-weight: 800;
+                        font-size: 1.6rem;
+                        line-height: 1.9rem;
+                        color: $red-escuro;
+                    }
                     li{
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
                         position: relative;
+                        &:not(:first-child){
+                            margin-top: 3rem;
+                        }
                         h6{
-                            font-weight: 500;
+                            font-weight: 600;
                             font-size: 1.6rem;
                             line-height: 1.9rem;
                         }
@@ -253,8 +284,24 @@
                             line-height: 1.9rem;
                         }
                     }
+                    &.active{
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
             }
         }
+    }
+}
+
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

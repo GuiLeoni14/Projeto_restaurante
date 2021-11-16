@@ -1,42 +1,22 @@
-const linksCards = document.querySelectorAll('.s-resource .content li a');
-const header = document.querySelector('.js-header');
-const btnDropdown = document.querySelector('#btnComp');
-const dropdown = document.querySelector('.js-dropdown');
-const linksSection = document.querySelectorAll('.js-nav li .js-link-section');
+const navTabs = document.querySelectorAll('.js-main-card-servicos .card-servicos a');
+const tabPaneAlmoco = document.querySelectorAll('.js-ul-cardapio-almoco')
+const tabPaneJantar = document.querySelectorAll('.js-ul-cardapio-jantar')
 
-linksCards.forEach(link =>{
-    link.addEventListener('click', scrollToCard);
-})
-linksSection.forEach(link =>{
-    link.addEventListener('click', scrollToCard);
-})
+navTabs.forEach((nav, index) =>{
+    nav.addEventListener('click', (event) => {
+        event.preventDefault();
 
-function scrollToCard(event){
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute('href');
-    const section = document.querySelector(href);
-    const positionInicialSection = section.offsetTop;
-    console.log(href);
-    console.log(positionInicialSection);
-    window.scrollTo({
-        top: positionInicialSection - 120,
-        behavior: 'smooth',
+        navTabs.forEach(itemNav => {
+            itemNav.classList.remove('active');
+        })
+        nav.classList.add('active');
+        tabPaneAlmoco.forEach(tab => {
+            tab.classList.remove('active');
+        })
+        tabPaneAlmoco[index].classList.add('active');
+        tabPaneJantar.forEach(tab => {
+            tab.classList.remove('active');
+        })
+        tabPaneJantar[index].classList.add('active');
     })
-}
-
-function fixedMenu(){
-    if (window.pageYOffset >= 80){
-        header.classList.add('fixed-menu');
-    } else {
-        header.classList.remove('fixed-menu');
-    }
-}
-
-function openDropdown(event){
-    event.preventDefault();
-    dropdown.classList.toggle('active');
-}
-
-window.addEventListener('scroll', fixedMenu);
-btnDropdown.addEventListener('click', openDropdown);
-dropdown.addEventListener('mouseleave', openDropdown)
+})
