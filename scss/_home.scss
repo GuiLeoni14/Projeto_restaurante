@@ -1,0 +1,80 @@
+.s-hero{
+    background: url("../img/background-hero.jpg") no-repeat center center;
+    background-size: cover;
+    .opacity{
+        width: 100%;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.97),rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.6));
+    }
+    .container{
+        .main-hero{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18rem 0rem 20rem 0rem;
+            .text-hero{
+                width: 100%;
+                max-width: 50%;
+                h1{
+                    color:$text-color;
+                    font-weight: bold;
+                    font-size: 3.4rem;
+                    line-height: 4rem;
+                    margin-bottom: 3rem;
+                }
+                p{
+                    color:$text-color;
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.s-sobre{
+    padding: 9rem 0rem;
+    // background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 3%, transparent 20%);
+    .container{
+        .main-sobre{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            .text-sobre{
+                padding: 8rem 0rem;
+                width: 100%;
+                max-width: 50%;
+                h3{
+                    padding-top: 1.5rem;
+                    position: relative;
+                    margin: 1.5rem 0rem;
+                    font-weight: bold;
+                    font-size: 2.1rem;
+                    line-height: 2.5rem;
+                }
+                h2{
+                    font-weight: bold;
+                    font-size: 3.4rem;
+                    line-height: 4rem;
+                    margin-bottom: 3rem;
+                    color: $red;
+                }
+                p{
+                    font-size: 1.6rem;
+                    text-align: justify;
+                    line-height: 1.9rem;
+                }
+            }
+            .img-sobre{
+                width: 100%;
+                max-width: 47rem;
+                img{
+                    border: 2px solid $black-color;
+                    width: 100%;
+                    max-width: 47rem;
+                    height: 44rem;
+                }
+            }
+        }
+    }
+}

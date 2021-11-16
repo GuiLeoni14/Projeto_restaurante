@@ -1,0 +1,11 @@
+.linha{
+    &:after{
+        position: absolute;
+        content: "";
+        top: 0;
+        width: 100%;
+        max-width: 5rem;
+        height: 0.2rem;
+        background-color: $red;
+    }
+}
