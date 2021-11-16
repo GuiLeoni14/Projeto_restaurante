@@ -78,3 +78,45 @@
         }
     }
 }
+
+.s-depoimentos{
+    background: url("../img/background-depoimentos.jpg") no-repeat center center;
+    background-size: cover;
+    .opacity{
+        width: 100%;
+        background: linear-gradient(90deg,transparent,rgba(64, 1, 1, 0.904),rgba(64, 1, 1, 0.904),rgba(64, 1, 1, 0.904),transparent);
+    }
+    .container{
+        .main-depoimentos{
+            width: 100%;
+            display: flex;
+            padding: 15rem 0rem;
+            align-items: center;
+            justify-content: center;
+            .text-depoimentos{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: relative;
+                h3{
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 3.4rem;
+                    line-height: 4rem;
+                    position: relative;
+                }
+                span{
+                    color: $yellow;
+                    font-size: 3.4rem;
+                    line-height: 4rem;
+                    img{
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
