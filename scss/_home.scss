@@ -120,3 +120,141 @@
         }
     }
 }
+
+
+.s-servicos{
+    padding: 9rem 0rem;
+    background-color: $black-color;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .container{
+        .text-servicos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h3{
+                color: #fff;
+                font-weight: bold;
+                font-size: 2.1rem;
+                line-height: 2.5rem;
+                position: relative;
+                text-align: center;
+                padding: 1.5rem;
+                .linha::after{
+                    left:50%; 
+                    transform:translate(-50%, -50%);
+                }
+            }
+            h2{
+                font-weight: bold;
+                font-size: 3.4rem;
+                line-height: 4rem;
+                margin-bottom: 3rem;
+                color: $yellow;
+            }
+        }
+        .main-card-servicos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        .main-cardapio{
+            margin-top: 9rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #fff;
+            .cardapio-almoco{
+                padding: 3rem;
+                width: 100%;
+                max-width: 50%;
+                background-color: $marrom-claro;
+                .titulo{
+                    span{
+                        font-size: 1.6rem;
+                        line-height: 1.9rem;
+                    }
+                    h4{
+                        margin: 1.5rem 0rem;
+                        font-weight: bold;
+                        font-size: 2.1rem;
+                        line-height: 2.5rem;
+                    }
+                }
+                ul{
+                    li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+                        h6{
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                            line-height: 1.9rem;
+                        }
+                        .linha::after{
+                            top: 50%;
+                            transform:translate(-50%, -50%);
+                            bottom: 0;
+                            width: 100%;
+                            max-width: 37rem;
+                        }
+                        span{
+                            font-weight: bold;
+                            font-size: 1.6rem;
+                            line-height: 1.9rem;
+                        }
+                    }
+                }
+            }
+            .cardapio-jantar{
+                padding: 3rem;
+                width: 100%;
+                max-width: 50%;
+                background-color: $marrom-claro;
+                .titulo{
+                    span{
+                        font-size: 1.6rem;
+                        line-height: 1.9rem;
+                    }
+                    h4{
+                        margin: 1.5rem 0rem;
+                        font-weight: bold;
+                        font-size: 2.1rem;
+                        line-height: 2.5rem;
+                    }
+                }
+                ul{
+                    li{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        position: relative;
+                        h6{
+                            font-weight: 500;
+                            font-size: 1.6rem;
+                            line-height: 1.9rem;
+                        }
+                        .linha::after{
+                            top: 50%;
+                            transform:translate(-50%, -50%);
+                            bottom: 0;
+                            width: 100%;
+                            max-width: 37rem;
+                        }
+                        span{
+                            font-weight: bold;
+                            font-size: 1.6rem;
+                            line-height: 1.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
