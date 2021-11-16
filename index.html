@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Restaurante - Project</title>
 </head>
@@ -79,8 +80,8 @@
             <div class="text-servicos">
                 <h3>
                     <div class="linha"></div>
-                    Nossos serviços</h3>
-                <h2>Conheça nossas especialidades</h2>
+                    Nosso cardápio</h3>
+                <h2>Veja nossos pratos</h2>
             </div>
             <div class="main-card-servicos js-main-card-servicos">
                 <div class="card-servicos">
@@ -445,6 +446,84 @@
             </div>
         </div>
     </section>
+    <section class="s-slide">
+        <div class="container">
+            <div class="s-main-slide">
+                <div class="s-text-slide">
+                    <h3>
+                        <div class="linha"></div>
+                        Veja nossos pratos</h3>
+                    <h2>Conheça nossas especialidades</h2>
+                </div>
+                <div class="main-slide-pratos">
+                    <div class="slide-pratos"  data-aos="fade-up">
+                        <div class="swiper-wrapper" id="fechamento">
+                            <div class="swiper-slide">
+                                <div class="card-slide-prato">
+                                    <img src="./img/feijoada.png" alt="">
+                                    <div class="text-slide">
+                                        <h3>Feijoada</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad harum ipsum tempore officiis facilis quae alias deleniti minima, eos quas numquam aliquid pariatur inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-slide-prato">
+                                    <img src="./img/lasanha.jpg" alt="">
+                                    <div class="text-slide">
+                                        <h3>Lasanha</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad harum ipsum tempore officiis facilis quae alias deleniti minima, eos quas numquam aliquid pariatur inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-slide-prato">
+                                    <img src="./img/estrogonofe.jpg" alt="">
+                                    <div class="text-slide">
+                                        <h3>Estrogonofre</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad harum ipsum tempore officiis facilis quae alias deleniti minima, eos quas numquam aliquid pariatur inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-slide-prato">
+                                    <img src="./img/feijoada.png" alt="">
+                                    <div class="text-slide">
+                                        <h3>Feijoada</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ad harum ipsum tempore officiis facilis quae alias deleniti minima, eos quas numquam aliquid pariatur inventore.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <h1>teste</h1>
+        </div>
+    </section>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".slide-pratos", {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".main-slide-pratos .swiper-button-next",
+                prevEl: ".main-slide-pratos .swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 </html>

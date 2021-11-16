@@ -173,6 +173,8 @@
                 width: 100%;
                 max-width: 50%;
                 background-color: $marrom-claro;
+                border-radius: 2rem 0rem 0rem 2rem;
+                border-right: 2px solid $red-escuro;
                 .titulo{
                     span{
                         font-size: 1.6rem;
@@ -236,6 +238,7 @@
                 width: 100%;
                 max-width: 50%;
                 background-color: $marrom-claro;
+                border-radius: 0rem 2rem 2rem 0rem;
                 .titulo{
                     span{
                         font-size: 1.6rem;
@@ -294,7 +297,51 @@
     }
 }
 
-
+.s-slide{
+    padding: 9rem 0rem;
+    .container{
+        overflow: hidden;
+        .s-main-slide{
+            .main-slide-pratos{
+                padding-top: 1rem;
+                position: relative;
+                .swiper-pagination{
+                    border-radius: 2rem;
+                }
+                .swiper-pagination-progressbar-fill{
+                    background-color: $red-escuro;
+                    border-radius: 2rem;
+                }
+            }
+            .s-text-slide{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                h3{
+                    color: $black-color;
+                    font-weight: bold;
+                    font-size: 2.1rem;
+                    line-height: 2.5rem;
+                    position: relative;
+                    text-align: center;
+                    padding: 1.5rem;
+                    .linha::after{
+                        left:50%; 
+                        transform:translate(-50%, -50%);
+                    }
+                }
+                h2{
+                    font-weight: bold;
+                    font-size: 3.4rem;
+                    line-height: 4rem;
+                    margin-bottom: 3rem;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+}
 @keyframes fadeIn{
     from {
         opacity: 0;
