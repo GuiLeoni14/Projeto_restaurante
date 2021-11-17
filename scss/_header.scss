@@ -24,6 +24,9 @@ header{
                     @include responsive(730px){
                         margin-right: 4rem;
                     }
+                    @include responsive(600px){
+                        display: none;
+                    }
                     li{
                         &:not(:first-child){
                             margin-left: 12rem;
@@ -88,6 +91,9 @@ header{
         padding: 3rem;
         transform: translateX(-100%);
         transition: all .3s;
+        @include responsive(500px){
+            width: 70%;
+        }
         .logo{
             img{
                 max-width: 10rem;

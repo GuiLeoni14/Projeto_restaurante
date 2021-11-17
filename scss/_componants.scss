@@ -17,6 +17,9 @@
     justify-content: center;
     width: 100%;
     max-width: 20rem;
+    @include responsive(480px){
+        max-width: 18rem;
+    }
     .img{
         border-radius: 50%;
         border: 2px solid #fff;
@@ -84,6 +87,9 @@
         height: 38.5rem;
         @include responsive(600px){
             height: 25rem;
+        }
+        @include responsive(480px){
+            height: 38rem;
         }
     }
     .text-slide{

@@ -267,6 +267,9 @@
                             @include responsive(991px){
                                 max-width: 32rem;
                             }
+                            @include responsive(480px){
+                                max-width: 25rem;
+                            }
                         }
                         span{
                             font-weight: bold;
@@ -335,6 +338,9 @@
                             }
                             @include responsive(991px){
                                 max-width: 32rem;
+                            }
+                            @include responsive(480px){
+                                max-width: 25rem;
                             }
                         }
                         span{
@@ -414,6 +420,11 @@
                     line-height: 4rem;
                     margin-bottom: 3rem;
                     color: $yellow;
+                }
+                @include responsive(480px){
+                    h2{
+                        font-size: 3rem;
+                    }
                 }
             }
         }
@@ -530,6 +541,27 @@
                         width: 100%;
                         text-align: justify;
                     }
+                    @include responsive(800px){
+                        max-width: 30rem;
+                        img{
+                            height: 30rem;
+                        }
+                        p{
+                            font-size: 1.4rem;
+                        }
+                    }
+                    @include responsive(660px){
+                        max-width: 25rem;
+                        img{
+                            height: 25rem;
+                        }
+                    }
+                    @include responsive(490px){
+                        max-width: 22rem;
+                        img{
+                            height: 22rem;
+                        }
+                    }
                 }
             }
         }
@@ -605,6 +637,9 @@
                                 }
                             }
                         }
+                        @include responsive(600px){
+                            text-align: center;
+                        }
                     }
                 }
                 @include responsive(991px){
@@ -614,11 +649,15 @@
                         width: 100%;
                         max-width: 57rem;
                     }
-                    .car-map{
-                        width: 100%;
+                }
+                @include responsive(600px){
+                    width: 100%;
+                    .card-item{
+                        max-width: 100%;
+                    }
+                    .card-map{
                         iframe{
-                            width: 100%;
-                            max-width: 57rem;
+                            max-width: 100%;
                         }
                     }
                 }
