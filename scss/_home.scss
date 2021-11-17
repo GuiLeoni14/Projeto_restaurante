@@ -417,7 +417,7 @@
         .s-main-slide{
             padding-bottom: 9rem;
             .main-slide-pratos{
-                padding-top: 1rem;
+                // padding-top: 1rem;
                 position: relative;
                 .swiper-pagination{
                     border-radius: 2rem;
@@ -428,6 +428,9 @@
                 }
                 .swiper-button-prev, .swiper-button-next{
                     color: #BF2011;
+                }
+                .slide-pratos{
+                    padding-top: 1rem;
                 }
             }
             .s-text-slide{
