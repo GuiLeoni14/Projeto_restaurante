@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
     <title>Restaurante - Project</title>
@@ -34,10 +35,10 @@
         <div class="opacity">
             <div class="container">
                 <div class="main-hero">
-                    <div class="text-hero">
+                    <div class="text-hero" data-aos="fade-right">
                         <h1>Nome do Restaurante</h1>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quisquam iste aliquid cumque saepe laboriosam, iure modi consequatur quae cum doloribus laudantium at quaerat dignissimos obcaecati, id tempore quasi facere?</p>
-                        <a href="" class="btn btn-primary">Faça seu pedido</a>
+                        <a href="" class="btn btn-primary" data-aos="fade-up">Faça seu pedido</a>
                     </div>
                 </div>
             </div>
@@ -46,14 +47,14 @@
     <section class="s-sobre" id="section-sobre">
         <div class="container">
             <div class="main-sobre">
-                <div class="text-sobre">
+                <div class="text-sobre" data-aos="fade-right">
                     <h3>Sobre ao restaurante
                         <div class="linha"></div>
                     </h3>
                     <h2>Bem-vindo ao Restaurante</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ad itaque debitis nostrum voluptas, ut et? Iure reprehenderit est laboriosam alias quam praesentium doloribus numquam, quae neque provident tenetur itaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam non pariatur obcaecati ipsam odio adipisci deserunt animi molestias cumque maiores officiis quia sequi corrupti sed numquam, eaque, id aliquam libero!</p>
                 </div>
-                <div class="img-sobre">
+                <div class="img-sobre"  data-aos="fade-left">
                     <img src="./img/img-sobre.jpg" alt="">
                 </div>
             </div>
@@ -62,7 +63,7 @@
     <section class="s-depoimentos">
         <div class="opacity">
             <div class="container">
-                <div class="main-depoimentos">
+                <div class="main-depoimentos" data-aos="flip-down">
                     <div class="text-depoimentos">
                         <h3>
                             <img src="./img/aspas-inicial.svg" alt="">
@@ -77,13 +78,13 @@
     </section>
     <section class="s-servicos" id="section-servicos">
         <div class="container">
-            <div class="text-servicos">
+            <div class="text-servicos"  data-aos="fade-down">
                 <h3>
                     <div class="linha"></div>
                     Nosso cardápio</h3>
                 <h2>Veja nosso cardápio</h2>
             </div>
-            <div class="main-card-servicos js-main-card-servicos">
+            <div class="main-card-servicos js-main-card-servicos"  data-aos="fade-up"> 
                 <div class="card-servicos">
                     <a href="" class="active">
                         <div class="img">
@@ -150,7 +151,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-cardapio">
+            <div class="main-cardapio" data-aos="flip-left">
                 <div class="cardapio-almoco">
                     <div class="titulo">
                         <span>Lista de pratos</span>
@@ -449,7 +450,7 @@
     <section class="s-slide" id="section-pratos">
         <div class="container">
             <div class="s-main-slide">
-                <div class="s-text-slide">
+                <div class="s-text-slide" data-aos="fade-down">
                     <h3>
                         <div class="linha"></div>
                         Veja nossos pratos</h3>
@@ -505,7 +506,7 @@
     </section>
     <section class="s-agendar">
         <div class="opacity">
-            <div class="text">
+            <div class="text" data-aos="flip-down">
                 <h2>Que tal conhecer nosso restaurante agora mesmo?</h2>
                 <a href="" class="btn btn-primary">Faça seu pedido</a>
             </div>
@@ -514,14 +515,14 @@
     <section class="s-profissionais" id="section-profissionais">
         <div class="container">
             <div class="main-profissionais">
-                <div class="text-profissionais">
+                <div class="text-profissionais" data-aos="fade-down">
                     <h3>
                         <div class="linha"></div>
                         Conheça nossos profissionais</h3>
                     <h2>Os cozinheiros da casa</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas temporibus facere quia explicabo aut ipsa accusantium maxime distinctio libero laborum. Tempora praesentium nisi voluptate similique, doloribus rem dolorem unde placeat?</p>
                 </div>
-                <div class="main-card-profissionais">
+                <div class="main-card-profissionais" data-aos="zoom-in-up">
                     <div class="card-profissionais">
                         <img src="./img/cozinheiro-2.jpg" alt="">
                         <h3>Nome</h3>
@@ -559,14 +560,14 @@
     <section class="s-contato" id="section-contato">
         <div class="container">
             <div class="main-contato">
-                <div class="text-contato">
+                <div class="text-contato" data-aos="fade-down">
                     <h3>
                         <div class="linha"></div>
                         Venha nos visitar</h3>
                     <h2>Contate-nos</h2>
                 </div>
                 <div class="card-contato">
-                    <div class="card-item">
+                    <div class="card-item" data-aos="flip-up">
                         <ul>
                             <li><a href=""><img src="./img/icon-local.svg" alt=""><span>Av Brasil, 000 - Pinheitos - MG</span></a></li>
                             <li><a href=""><img src="./img/icon-whats.svg" alt=""><span>(35) 9 9997-9041</span></a></li>
@@ -583,10 +584,10 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29660.38842439613!2d-45.93464895334175!3d-21.681412081489995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ca14a1c36dad45%3A0x377ef1e5b127664e!2sMachado%2C%20MG%2C%2037750-000!5e0!3m2!1spt-BR!2sbr!4v1637107276487!5m2!1spt-BR!2sbr" width="570" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
-                <div class="logo">
-                    <img src="./img/logo-footer.svg" alt="">
-                    <h3>Redes sociais</h3>
-                    <div class="social-icons">
+                <div class="logo" >
+                    <img src="./img/logo-footer.svg" alt="" data-aos="zoom-out">
+                    <h3 data-aos="zoom-out">Redes sociais</h3>
+                    <div class="social-icons" data-aos="fade-up">
                         <img src="./img/icon-face.svg" alt="">
                         <img src="./img/icon-insta.svg" alt="">
                         <img src="./img/icon-twt.svg" alt="">
@@ -633,6 +634,7 @@
         </aside>
     </div>
     <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var largura = window.screen.width;
@@ -659,6 +661,11 @@
                 nextEl: ".main-slide-pratos .swiper-button-next",
                 prevEl: ".main-slide-pratos .swiper-button-prev",
             },
+        });
+        AOS.init({
+            duration: 1000,
+            once: true,
+            disable: 'mobile',
         });
     </script>
 </body>
