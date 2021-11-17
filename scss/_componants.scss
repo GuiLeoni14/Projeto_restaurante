@@ -20,6 +20,9 @@
     @include responsive(480px){
         max-width: 18rem;
     }
+    @media (max-width: 380px){
+        max-width: 15rem;
+    }
     .img{
         border-radius: 50%;
         border: 2px solid #fff;
@@ -62,6 +65,12 @@
             text-align: justify;
             margin-top: 1.5rem;
             color: #fff;
+        }
+        @media (max-width: 380px){
+            p{
+                font-size: 1.4rem;
+                line-height: 1.7rem;
+            }
         }
     }
     a{

@@ -18,4 +18,7 @@ html{
     @include responsive(600px){
         font-size: 55%;
     }
+    @include responsive(330px){
+        font-size: 50%;
+    }
 }

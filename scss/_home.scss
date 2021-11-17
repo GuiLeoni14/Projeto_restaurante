@@ -153,6 +153,28 @@
                         right: 0;
                     }
                 }
+                @include responsive(500px){
+                    h3{
+                        font-size: 2.8rem;
+                    }
+                    span{
+                        font-size: 2.5rem;
+                    }
+                    img{
+                        max-width: 3rem;
+                    }
+                }
+                @include responsive(370px){
+                    h3{
+                        font-size: 2.3rem;
+                    }
+                    span{
+                        font-size: 2rem;
+                    }
+                    img{
+                        max-width: 3rem;
+                    }
+                }
             }
         }
     }
@@ -270,6 +292,12 @@
                             @include responsive(480px){
                                 max-width: 25rem;
                             }
+                            @include responsive(450px){
+                                max-width: 15rem;
+                            }
+                            @include responsive(320px){
+                                max-width: 10rem;
+                            }
                         }
                         span{
                             font-weight: bold;
@@ -341,6 +369,12 @@
                             }
                             @include responsive(480px){
                                 max-width: 25rem;
+                            }
+                            @include responsive(450px){
+                                max-width: 15rem;
+                            }
+                            @include responsive(320px){
+                                max-width: 10rem;
                             }
                         }
                         span{
@@ -424,6 +458,11 @@
                 @include responsive(480px){
                     h2{
                         font-size: 3rem;
+                    }
+                }
+                @include responsive(430px){
+                    h2{
+                        font-size: 2.3rem;
                     }
                 }
             }
@@ -634,6 +673,9 @@
                             img{
                                 &:not(:first-child){
                                     margin-left: 1.5rem;
+                                    @include responsive(320px){
+                                        margin-left: 1.3rem;
+                                    }
                                 }
                             }
                         }
