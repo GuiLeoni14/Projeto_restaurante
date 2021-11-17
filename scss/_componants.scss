@@ -74,15 +74,17 @@
 
 .card-slide-prato{
     width: 100%;
-    max-width: 37rem;
     background-color:$text-color;
     box-shadow: -10px 10px 10px rgba(38, 31, 29, 0.6);
     border-radius: 1rem;
     img{
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-        width: 37rem;
+        width: 100%;
         height: 38.5rem;
+        @include responsive(600px){
+            height: 25rem;
+        }
     }
     .text-slide{
         width: 100%;

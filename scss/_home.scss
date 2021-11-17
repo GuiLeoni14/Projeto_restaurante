@@ -4,6 +4,9 @@
     .opacity{
         width: 100%;
         background: linear-gradient(90deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.97),rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.6));
+        @include responsive(800px){
+            background: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.97),rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.6));
+        }
     }
     .container{
         .main-hero{
@@ -26,6 +29,20 @@
                     font-size: 1.6rem;
                     line-height: 1.8rem;
                     margin-bottom: 3rem;
+                }
+            }
+            @include responsive(800px){
+                .text-hero{
+                    max-width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    p{
+                        text-align: center;
+                        width: 100%;
+                        max-width: 60rem;
+                    }
                 }
             }
         }
@@ -74,6 +91,26 @@
                     max-width: 47rem;
                     height: 44rem;
                 }
+            }
+            @include responsive(1080px){
+                align-items: center;
+                flex-direction: column;
+                padding: 0rem 8rem;
+                .text-sobre{
+                    max-width: 100%;
+                }
+                .img-sobre{
+                    max-width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+            @include responsive(600px){
+                padding: 0;
             }
         }
     }
@@ -218,9 +255,18 @@
                             // width: 100%;
                             // max-width: 37rem;
                             top: 50%;
-                            right: 6rem;
+                            transform:translate(-50%, -50%);
                             width: 100%;
                             max-width: 37rem;
+                            @include responsive(1200px){
+                                max-width: 32rem;
+                            }
+                            @include responsive(1080px){
+                                max-width: 26rem;
+                            }
+                            @include responsive(991px){
+                                max-width: 32rem;
+                            }
                         }
                         span{
                             font-weight: bold;
@@ -281,6 +327,15 @@
                             bottom: 0;
                             width: 100%;
                             max-width: 37rem;
+                            @include responsive(1200px){
+                                max-width: 30rem;
+                            }
+                            @include responsive(1080px){
+                                max-width: 26rem;
+                            }
+                            @include responsive(991px){
+                                max-width: 32rem;
+                            }
                         }
                         span{
                             font-weight: bold;
@@ -293,6 +348,23 @@
                         flex-direction: column;
                     }
                 }
+            }
+            @include responsive(991px){
+                flex-direction: column;
+                align-items: center;
+                padding: 0rem 10rem;
+                .cardapio-almoco{
+                    border-radius: 2rem;
+                    max-width: 100%;
+                    margin-bottom: 1.5rem;
+                }
+                .cardapio-jantar{
+                    border-radius: 2rem;
+                    max-width: 100%;
+                }
+            }
+            @include responsive(750px){
+                padding: 0rem;
             }
         }
     }
@@ -372,6 +444,13 @@
             font-weight: bold;
             font-size: 3.4rem;
             line-height: 4rem;
+        }
+        @include responsive(720px){
+            flex-direction: column;
+            h2{
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
         }
     }
 }
@@ -525,6 +604,21 @@
                                     margin-left: 1.5rem;
                                 }
                             }
+                        }
+                    }
+                }
+                @include responsive(991px){
+                    width: 100%;
+                    flex-direction: column;
+                    .card-item{
+                        width: 100%;
+                        max-width: 57rem;
+                    }
+                    .car-map{
+                        width: 100%;
+                        iframe{
+                            width: 100%;
+                            max-width: 57rem;
                         }
                     }
                 }

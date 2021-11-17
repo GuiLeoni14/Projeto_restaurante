@@ -624,6 +624,10 @@
                     <li><a href="#section-sobre">Sobre</a></li>
                     <li><a href="#section-profissionais">Profissionais</a></li>
                 </ul>
+                <ul class="icon-local-contato">
+                    <li><a href=""><img src="./img/icon-local.svg" alt=""><span>Av Paulista, 000 - Pinheitos - MG</span></a></li>
+                    <li><a href=""><img src="./img/icon-whats.svg" alt=""><span>(35) 9 9998-3851</span></a></li>
+                </ul>
                 <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=5535999979041&text&app_absent=0" target="_blank">Faça seu pedido</a>
             </nav>
         </aside>
@@ -631,8 +635,16 @@
     <script src="./js/index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        var largura = window.screen.width;
+            if (largura <= 1080 && largura > 480){
+                slides = 2
+            }else if(largura <= 480){
+                slides = 1    
+            }else{
+                slides = 3
+            }
         var swiper = new Swiper(".slide-pratos", {
-            slidesPerView: 3,
+            slidesPerView: slides,
             spaceBetween: 32,
             autoplay: {
                 delay: 3000,

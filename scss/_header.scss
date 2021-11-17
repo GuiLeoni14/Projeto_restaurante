@@ -21,9 +21,18 @@ header{
                     align-items: center;
                     justify-content: center;
                     margin-right: 10rem;
+                    @include responsive(730px){
+                        margin-right: 4rem;
+                    }
                     li{
                         &:not(:first-child){
                             margin-left: 12rem;
+                            @include responsive(800px){
+                                margin-left: 6rem;
+                            }
+                            @include responsive(650px){
+                                margin-left: 1.5rem;
+                            }
                         }
                         a{
                             display: flex;
@@ -106,7 +115,6 @@ header{
             }
         }
         .logo{
-            margin-top: 9rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -115,6 +123,10 @@ header{
                 width: 100%;
                 max-width: 20rem;
                 height: 20rem;
+                @include responsive(1150px){
+                    max-width: 12rem;
+                    height: 12rem;
+                }
             }
             h3{
                 margin-top: 1.5rem;
@@ -135,6 +147,28 @@ header{
                     }
                     &:hover{
                         transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .icon-local-contato{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            li{
+                padding: 0;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img{
+                        margin-right: 0.7rem;
+                    }
+                    span{
+                        color: #fff;
+                        font-size: 1.2rem;
+                        line-height: 1.9rem;
                     }
                 }
             }
