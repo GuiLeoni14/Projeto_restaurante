@@ -314,6 +314,9 @@
                     background-color: $red-escuro;
                     border-radius: 2rem;
                 }
+                .swiper-button-prev, .swiper-button-next{
+                    color: #BF2011;
+                }
             }
             .s-text-slide{
                 display: flex;
@@ -373,13 +376,13 @@
     }
 }
 
-.s-proficionais{
+.s-profissionais{
     border-top: 2px solid #fff;
     background-color: $black-color;
     padding: 9rem 0rem;
     .container{
-        .main-proficionais{
-            .text-proficionais{
+        .main-profissionais{
+            .text-profissionais{
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -414,13 +417,13 @@
                     max-width: 80rem;
                 }
             }
-            .main-card-proficionais{
+            .main-card-profissionais{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 3rem;
-                .card-proficionais{
+                .card-profissionais{
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
