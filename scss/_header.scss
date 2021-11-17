@@ -43,3 +43,100 @@ header{
         }
     }
 }
+.menu-open{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 20000;
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 0;
+    }
+    aside{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: #fff;
+        padding: 3rem;
+        transform: translateX(-100%);
+        transition: all .3s;
+        .logo{
+            img{
+                max-width: 10rem;
+            }
+        }
+        nav{
+            ul{
+                li{
+                    padding: 1.5rem 0;
+                    display: block;
+                    font-size: 1.8rem;
+                }
+            }
+            a{
+                width: 100%;
+                text-align: center;
+                margin-top: 1rem;
+                border-color: $black-color;
+            }
+        }
+        .logo{
+            margin-top: 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 100%;
+                max-width: 30rem;
+                height: 30rem;
+            }
+            h3{
+                margin-top: 1.5rem;
+                color: $red;
+                font-weight: bold;
+                font-size: 3.4rem;
+                line-height: 4rem;
+            }
+            .social-icons{
+                margin-top: 3rem;
+                img{
+                    height: 10rem;
+                    width: 10rem;
+                    &:not(:first-child){
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu-opened{
+    overflow: hidden;
+    .menu-open{
+        opacity: 1;
+        pointer-events: all;
+        aside{
+            transform: translateX(0%);
+            position: relative;
+            #icon-x{
+                position: absolute;
+                width: 100%;
+                max-width: 3rem;
+                top: 20px;
+                right: 30px;
+            }
+        }
+    }
+}
